@@ -3,7 +3,6 @@
 #include "strings-de.h"
 #include "strings-en_GB.h"
 #include "strings-en_US.h"
-#include "strings-en_FUZZ.h"
 #include "strings-es.h"
 #include "strings-fr.h"
 #include "strings-no.h"
