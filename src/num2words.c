@@ -1,5 +1,4 @@
 #include "num2words.h"
-#include "strings-ca.h"
 #include "strings-de.h"
 #include "strings-en_GB.h"
 #include "strings-en_US.h"
@@ -49,9 +48,6 @@ static size_t interpolate_and_append(char* buffer, const size_t length,
 
 const char* get_hour(Language lang, int index) {
   switch (lang) {
-    case CA:
-      return HOURS_CA[index];
-      break;
     case DE:
       return HOURS_DE[index];
       break;
@@ -77,9 +73,6 @@ const char* get_hour(Language lang, int index) {
 
 const char* get_rel(Language lang, int index) {
   switch (lang) {
-    case CA:
-      return RELS_CA[index];
-      break;
     case DE:
       return RELS_DE[index];
       break;

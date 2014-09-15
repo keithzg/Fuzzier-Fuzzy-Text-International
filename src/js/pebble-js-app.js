@@ -10,15 +10,13 @@ var alignments = {
 };
 
 var langs = {
-  en_FUZZ:  0,
-  ca:    1,
-  de:    2,
-  en_GB: 3,
-  en_US: 4,
-  es:    5,
-  fr:    6,
-  no:    7,
-  sv:    8
+  de:    0,
+  en_GB: 1,
+  en_US: 2,
+  es:    3,
+  fr:    4,
+  no:    5,
+  sv:    6
 };
 
 function readyCallback(event) {
@@ -33,7 +31,7 @@ function readyCallback(event) {
 function showConfiguration(event) {
   onReady(function() {
     var opts = getOptions();
-    var url  = "http://keithzg.ca/configure-fuzzier-text.html";
+    var url  = "http://static.sitr.us.s3-website-us-west-2.amazonaws.com/configure-fuzzy-text.html";
     Pebble.openURL(url + "#v=" + encodeURIComponent(VERSION) + "&options=" + encodeURIComponent(opts));
   });
 }
